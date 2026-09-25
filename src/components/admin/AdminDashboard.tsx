@@ -75,7 +75,7 @@ export function AdminDashboard({ admin }: { admin: AdminUser }) {
       <aside className={`fixed lg:static inset-y-0 left-0 z-50 w-64 bg-primary-dark text-white transform transition-transform ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0`}>
         <div className="p-4 border-b border-white/10">
           <div className="flex items-center gap-2">
-            <Image src="/images/logo-cipbg.png" alt="Logo" width={36} height={36} className="rounded-full" />
+            <Image src="/images/logo.png" alt="Logo" width={72} height={48} className="rounded-lg" />
             <div>
               <p className="font-bold text-sm">CIPBG Admin</p>
               <p className="text-xs text-blue-300">{admin.name}</p>

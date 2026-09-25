@@ -69,16 +69,16 @@ export default function RejoindrePage() {
               {/* Image grid */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative h-40 rounded-xl overflow-hidden shadow-md">
-                  <Image src="/images/peace-conference.jpg" alt="Conférence" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+                  <Image src="/images/paix-mains.jpg" alt="Conférence" fill className="object-cover hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="relative h-40 rounded-xl overflow-hidden shadow-md">
-                  <Image src="/images/education-girls.jpg" alt="Éducation" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+                  <Image src="/images/education-classe.jpg" alt="Éducation" fill className="object-cover hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="relative h-40 rounded-xl overflow-hidden shadow-md">
-                  <Image src="/images/environment-tree.jpg" alt="Environnement" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+                  <Image src="/images/environnement-foret.jpg" alt="Environnement" fill className="object-cover hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="relative h-40 rounded-xl overflow-hidden shadow-md">
-                  <Image src="/images/youth-training.jpg" alt="Formation" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+                  <Image src="/images/emploi-digitale.jpg" alt="Formation" fill className="object-cover hover:scale-105 transition-transform duration-500" />
                 </div>
               </div>
             </div>

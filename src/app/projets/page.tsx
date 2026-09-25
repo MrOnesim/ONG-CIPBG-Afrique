@@ -26,7 +26,7 @@ export default async function ProjectsPage() {
         kicker="Nos réalisations"
         title="Nos Projets"
         subtitle="Retrouvez ici l'ensemble des projets menés par CIPBG Afrique pour la paix et la bonne gouvernance."
-        image="/images/youth-training.jpg"
+        image="/images/community-meeting.jpg"
       />
 
       <section className="py-16 bg-white">
@@ -35,16 +35,16 @@ export default async function ProjectsPage() {
             <div className="text-center py-16">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-10">
                 <div className="relative h-40 rounded-xl overflow-hidden shadow-md">
-                  <Image src="/images/peace-conference.jpg" alt="Paix" fill className="object-cover opacity-50" />
+                  <Image src="/images/equipe-atelier.jpg" alt="Paix" fill className="object-cover opacity-50" />
                 </div>
                 <div className="relative h-40 rounded-xl overflow-hidden shadow-md">
-                  <Image src="/images/education-girls.jpg" alt="Éducation" fill className="object-cover opacity-50" />
+                  <Image src="/images/etudiants-groupe.jpg" alt="Éducation" fill className="object-cover opacity-50" />
                 </div>
                 <div className="relative h-40 rounded-xl overflow-hidden shadow-md">
-                  <Image src="/images/environment-tree.jpg" alt="Environnement" fill className="object-cover opacity-50" />
+                  <Image src="/images/reboisement-enfant.jpg" alt="Environnement" fill className="object-cover opacity-50" />
                 </div>
                 <div className="relative h-40 rounded-xl overflow-hidden shadow-md">
-                  <Image src="/images/youth-training.jpg" alt="Formation" fill className="object-cover opacity-50" />
+                  <Image src="/images/emploi-digitale.jpg" alt="Formation" fill className="object-cover opacity-50" />
                 </div>
               </div>
               <ClipboardList className="w-14 h-14 mx-auto text-primary/40 mb-4" />
@@ -59,7 +59,7 @@ export default async function ProjectsPage() {
                     {p.imageUrl ? (
                       <Image src={p.imageUrl} alt={p.name} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                     ) : (
-                      <Image src="/images/peace-conference.jpg" alt={p.name} fill className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" />
+                      <Image src="/images/conference-publique.jpg" alt={p.name} fill className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" />
                     )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                     <div className="absolute top-4 right-4">

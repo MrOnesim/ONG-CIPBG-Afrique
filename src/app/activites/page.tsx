@@ -36,7 +36,7 @@ export default async function ActivitiesPage() {
         kicker="En action"
         title="Nos Activités"
         subtitle="Conférences, ateliers, formations, sensibilisations et campagnes menées sur le terrain."
-        image="/images/peace-conference.jpg"
+        image="/images/paix-poignee.jpg"
       />
 
       {/* Activity types */}
@@ -58,13 +58,13 @@ export default async function ActivitiesPage() {
             <div className="text-center py-16">
               <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-10">
                 <div className="relative h-36 rounded-xl overflow-hidden shadow-md">
-                  <Image src="/images/peace-conference.jpg" alt="" fill className="object-cover opacity-50" />
+                  <Image src="/images/conference-publique.jpg" alt="" fill className="object-cover opacity-50" />
                 </div>
                 <div className="relative h-36 rounded-xl overflow-hidden shadow-md">
-                  <Image src="/images/governance-workshop.jpg" alt="" fill className="object-cover opacity-50" />
+                  <Image src="/images/atelier-whiteboard.jpg" alt="" fill className="object-cover opacity-50" />
                 </div>
                 <div className="relative h-36 rounded-xl overflow-hidden shadow-md">
-                  <Image src="/images/community-meeting.jpg" alt="" fill className="object-cover opacity-50" />
+                  <Image src="/images/assemblee-public.jpg" alt="" fill className="object-cover opacity-50" />
                 </div>
               </div>
               <Calendar className="w-14 h-14 mx-auto text-secondary/60 mb-4" />
@@ -79,7 +79,7 @@ export default async function ActivitiesPage() {
                     {a.imageUrl ? (
                       <Image src={a.imageUrl} alt={a.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                     ) : (
-                      <Image src="/images/peace-conference.jpg" alt={a.title} fill className="object-cover opacity-60" />
+                      <Image src="/images/education-secondaire.jpg" alt={a.title} fill className="object-cover opacity-60" />
                     )}
                   </div>
                   <div className="flex-1 p-6 md:p-8">

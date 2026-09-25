@@ -25,7 +25,7 @@ export default async function DocumentsPage() {
         kicker="Ressources"
         title="Documents & Rapports"
         subtitle="Statuts, rapports d'activités, publications et documents officiels de CIPBG Afrique."
-        image="/images/governance-workshop.jpg"
+        image="/images/presentation-reunion.jpg"
       />
 
       {/* Document categories */}
@@ -53,7 +53,7 @@ export default async function DocumentsPage() {
           {allDocs.length === 0 ? (
             <div className="text-center py-16">
               <div className="relative h-48 max-w-md mx-auto rounded-2xl overflow-hidden shadow-md mb-8">
-                <Image src="/images/governance-workshop.jpg" alt="" fill className="object-cover opacity-50" />
+                <Image src="/images/conference-publique.jpg" alt="" fill className="object-cover opacity-50" />
               </div>
               <FileText className="w-14 h-14 mx-auto text-primary/40 mb-4" />
               <p className="text-lg text-slate-500 mb-2">Les documents seront bientôt disponibles.</p>

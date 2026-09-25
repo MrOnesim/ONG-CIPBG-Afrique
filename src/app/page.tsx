@@ -30,13 +30,13 @@ const domains = [
   { icon: Bird, title: "Paix et cohésion sociale", desc: "Promouvoir la paix et le vivre-ensemble entre les communautés.", img: "/images/peace-conference.jpg" },
   { icon: Scale, title: "Bonne gouvernance", desc: "Encourager la transparence et la responsabilité dans la gestion publique.", img: "/images/governance-workshop.jpg" },
   { icon: Landmark, title: "Démocratie et citoyenneté", desc: "Renforcer la participation citoyenne et la culture démocratique.", img: "/images/community-meeting.jpg" },
-  { icon: SearchCheck, title: "Transparence et lutte contre la corruption", desc: "Combattre la corruption et promouvoir l'intégrité.", img: "/images/governance-workshop.jpg" },
+  { icon: SearchCheck, title: "Transparence et lutte contre la corruption", desc: "Combattre la corruption et promouvoir l'intégrité.", img: "/images/justice-balance.jpg" },
   { icon: GraduationCap, title: "Éducation des filles", desc: "Favoriser l'accès à l'éducation pour les filles en milieu urbain et rural.", img: "/images/education-girls.jpg" },
   { icon: Briefcase, title: "Emploi des jeunes", desc: "Promouvoir l'autonomisation et l'insertion professionnelle des jeunes.", img: "/images/youth-training.jpg" },
-  { icon: ShieldCheck, title: "Prévention de l'extrémisme", desc: "Sensibiliser aux risques de l'extrémisme violent.", img: "/images/peace-conference.jpg" },
-  { icon: Vote, title: "Prévention des violences électorales", desc: "Promouvoir des élections pacifiques et non-violentes.", img: "/images/community-meeting.jpg" },
+  { icon: ShieldCheck, title: "Prévention de l'extrémisme", desc: "Sensibiliser aux risques de l'extrémisme violent.", img: "/images/paix-mains.jpg" },
+  { icon: Vote, title: "Prévention des violences électorales", desc: "Promouvoir des élections pacifiques et non-violentes.", img: "/images/elections-urne.jpg" },
   { icon: Sprout, title: "Protection de l'environnement", desc: "Sensibiliser à la protection de notre environnement.", img: "/images/environment-tree.jpg" },
-  { icon: Handshake, title: "Développement communautaire", desc: "Soutenir les initiatives de développement local.", img: "/images/join-bg.jpg" },
+  { icon: Handshake, title: "Développement communautaire", desc: "Soutenir les initiatives de développement local.", img: "/images/benevoles-groupe.jpg" },
 ];
 
 const stats = [
@@ -62,12 +62,12 @@ const testimonials = [
 ];
 
 const galleryPreview = [
-  { src: "/images/peace-conference.jpg", alt: "Conférence sur la paix" },
-  { src: "/images/education-girls.jpg", alt: "Éducation des filles" },
-  { src: "/images/community-meeting.jpg", alt: "Réunion communautaire" },
-  { src: "/images/environment-tree.jpg", alt: "Protection de l'environnement" },
-  { src: "/images/youth-training.jpg", alt: "Formation des jeunes" },
-  { src: "/images/governance-workshop.jpg", alt: "Atelier bonne gouvernance" },
+  { src: "/images/etudiants-groupe.jpg", alt: "Les jeunes engagés" },
+  { src: "/images/emploi-digitale.jpg", alt: "Formation au numérique" },
+  { src: "/images/environnement-foret.jpg", alt: "Protection de l'environnement" },
+  { src: "/images/presentation-reunion.jpg", alt: "Échanges et présentations" },
+  { src: "/images/assemblee-public.jpg", alt: "Assemblée citoyenne" },
+  { src: "/images/citoyens-mobilises.jpg", alt: "Citoyens mobilisés" },
 ];
 
 export const dynamic = "force-dynamic";
@@ -188,10 +188,10 @@ export default async function HomePage() {
                 </div>
                 {/* Floating accent image */}
                 <div className="absolute -bottom-6 -left-6 w-32 h-32 rounded-xl overflow-hidden shadow-xl border-4 border-white hidden md:block animate-float">
-                  <Image src="/images/peace-conference.jpg" alt="Conférence" fill className="object-cover" />
+                  <Image src="/images/paix-poignee.jpg" alt="Conférence" fill className="object-cover" />
                 </div>
                 <div className="absolute -top-4 -right-4 w-28 h-28 rounded-xl overflow-hidden shadow-xl border-4 border-white hidden md:block animate-float" style={{ animationDelay: "2s" }}>
-                  <Image src="/images/education-girls.jpg" alt="Éducation" fill className="object-cover" />
+                  <Image src="/images/education-classe.jpg" alt="Éducation" fill className="object-cover" />
                 </div>
                 <div className="absolute top-6 left-6 bg-white/95 backdrop-blur rounded-xl px-4 py-2 shadow-lg flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-accent" />
@@ -214,7 +214,7 @@ export default async function HomePage() {
             <Reveal>
               <div className="bg-white rounded-2xl overflow-hidden shadow-md group h-full">
                 <div className="relative h-56 overflow-hidden">
-                  <Image src="/images/community-meeting.jpg" alt="Vision CIPBG" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <Image src="/images/equipe-numerique.jpg" alt="Vision CIPBG" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
                   <div className="absolute bottom-4 left-6">
                     <Eye className="w-7 h-7 text-white" />
@@ -232,7 +232,7 @@ export default async function HomePage() {
             <Reveal delay={120}>
               <div className="bg-white rounded-2xl overflow-hidden shadow-md group h-full">
                 <div className="relative h-56 overflow-hidden">
-                  <Image src="/images/governance-workshop.jpg" alt="Mission CIPBG" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <Image src="/images/gouvernance-reunion.jpg" alt="Mission CIPBG" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent" />
                   <div className="absolute bottom-4 left-6">
                     <Target className="w-7 h-7 text-white" />
@@ -292,7 +292,7 @@ export default async function HomePage() {
 
       {/* ══════════ STATS WITH BACKGROUND IMAGE ══════════ */}
       <section className="py-20 relative overflow-hidden">
-        <Image src="/images/hero-bg.jpg" alt="" fill className="object-cover" />
+        <Image src="/images/equipe-atelier.jpg" alt="" fill className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-br from-primary-dark via-primary to-primary-dark" />
         <div className="absolute inset-0 bg-primary/40" />
         <div className="relative z-10 max-w-7xl mx-auto px-4">
@@ -578,7 +578,7 @@ export default async function HomePage() {
             </Reveal>
             <Reveal delay={120}>
               <div className="relative h-72 md:h-96 rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/images/peace-conference.jpg" alt="Conférence CIPBG" fill className="object-cover" />
+                <Image src="/images/partenaires-office.jpg" alt="Conférence CIPBG" fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/40 to-transparent" />
               </div>
             </Reveal>

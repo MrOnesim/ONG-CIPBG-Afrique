@@ -21,16 +21,16 @@ export const metadata: Metadata = {
 };
 
 const domains = [
-  { icon: Bird, title: "Paix et cohésion sociale", desc: "Promouvoir la paix et le vivre-ensemble entre les communautés à travers le dialogue intercommunautaire, la médiation et les initiatives de réconciliation.", img: "/images/peace-conference.jpg", color: "from-blue-600" },
-  { icon: Scale, title: "Bonne gouvernance", desc: "Encourager la transparence, la redevabilité et la responsabilité dans la gestion des affaires publiques à tous les niveaux.", img: "/images/governance-workshop.jpg", color: "from-indigo-600" },
-  { icon: Landmark, title: "Démocratie et citoyenneté", desc: "Renforcer la culture démocratique, la participation citoyenne et l'engagement civique des populations.", img: "/images/community-meeting.jpg", color: "from-purple-600" },
-  { icon: SearchCheck, title: "Transparence et lutte contre la corruption", desc: "Combattre la corruption sous toutes ses formes et promouvoir l'intégrité dans les institutions publiques et privées.", img: "/images/governance-workshop.jpg", color: "from-red-600" },
-  { icon: GraduationCap, title: "Éducation des filles", desc: "Favoriser l'accès à l'éducation de qualité pour les filles en milieu urbain et rural, lutter contre les obstacles à la scolarisation.", img: "/images/education-girls.jpg", color: "from-pink-600" },
-  { icon: Briefcase, title: "Emploi et autonomisation des jeunes", desc: "Promouvoir l'insertion professionnelle et l'autonomisation économique des jeunes à travers la formation et l'entrepreneuriat.", img: "/images/youth-training.jpg", color: "from-amber-600" },
-  { icon: ShieldCheck, title: "Prévention de l'extrémisme violent", desc: "Sensibiliser les populations, en particulier les jeunes, sur les risques liés à l'extrémisme violent et au radicalisme.", img: "/images/peace-conference.jpg", color: "from-orange-600" },
-  { icon: Vote, title: "Prévention des violences électorales", desc: "Promouvoir des élections pacifiques et non-violentes avant, pendant et après les processus électoraux.", img: "/images/community-meeting.jpg", color: "from-teal-600" },
-  { icon: Sprout, title: "Protection de l'environnement", desc: "Sensibiliser les communautés à la protection de l'environnement et promouvoir les pratiques de développement durable.", img: "/images/environment-tree.jpg", color: "from-green-600" },
-  { icon: Handshake, title: "Développement communautaire", desc: "Soutenir les initiatives locales de développement, renforcer les capacités communautaires et encourager la solidarité.", img: "/images/join-bg.jpg", color: "from-cyan-600" },
+  { icon: Bird, title: "Paix et cohésion sociale", desc: "Promouvoir la paix et le vivre-ensemble entre les communautés à travers le dialogue intercommunautaire, la médiation et les initiatives de réconciliation.", img: "/images/paix-mains.jpg", color: "from-blue-600" },
+  { icon: Scale, title: "Bonne gouvernance", desc: "Encourager la transparence, la redevabilité et la responsabilité dans la gestion des affaires publiques à tous les niveaux.", img: "/images/gouvernance-reunion.jpg", color: "from-indigo-600" },
+  { icon: Landmark, title: "Démocratie et citoyenneté", desc: "Renforcer la culture démocratique, la participation citoyenne et l'engagement civique des populations.", img: "/images/assemblee-public.jpg", color: "from-purple-600" },
+  { icon: SearchCheck, title: "Transparence et lutte contre la corruption", desc: "Combattre la corruption sous toutes ses formes et promouvoir l'intégrité dans les institutions publiques et privées.", img: "/images/justice-balance.jpg", color: "from-red-600" },
+  { icon: GraduationCap, title: "Éducation des filles", desc: "Favoriser l'accès à l'éducation de qualité pour les filles en milieu urbain et rural, lutter contre les obstacles à la scolarisation.", img: "/images/education-classe.jpg", color: "from-pink-600" },
+  { icon: Briefcase, title: "Emploi et autonomisation des jeunes", desc: "Promouvoir l'insertion professionnelle et l'autonomisation économique des jeunes à travers la formation et l'entrepreneuriat.", img: "/images/emploi-digitale.jpg", color: "from-amber-600" },
+  { icon: ShieldCheck, title: "Prévention de l'extrémisme violent", desc: "Sensibiliser les populations, en particulier les jeunes, sur les risques liés à l'extrémisme violent et au radicalisme.", img: "/images/citoyens-mobilises.jpg", color: "from-orange-600" },
+  { icon: Vote, title: "Prévention des violences électorales", desc: "Promouvoir des élections pacifiques et non-violentes avant, pendant et après les processus électoraux.", img: "/images/elections-urne.jpg", color: "from-teal-600" },
+  { icon: Sprout, title: "Protection de l'environnement", desc: "Sensibiliser les communautés à la protection de l'environnement et promouvoir les pratiques de développement durable.", img: "/images/environnement-foret.jpg", color: "from-green-600" },
+  { icon: Handshake, title: "Développement communautaire", desc: "Soutenir les initiatives locales de développement, renforcer les capacités communautaires et encourager la solidarité.", img: "/images/benevoles-groupe.jpg", color: "from-cyan-600" },
 ];
 
 export default function DomainesPage() {
@@ -40,7 +40,7 @@ export default function DomainesPage() {
         kicker="Nos domaines"
         title="Domaines d'intervention"
         subtitle="CIPBG Afrique intervient dans dix domaines clés pour bâtir des sociétés pacifiques, responsables et transparentes."
-        image="/images/hero-bg.jpg"
+        image="/images/equipe-numerique.jpg"
       />
 
       {/* Domains with full images */}

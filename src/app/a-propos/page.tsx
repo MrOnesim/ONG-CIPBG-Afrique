@@ -11,14 +11,14 @@ export const metadata: Metadata = {
 };
 
 const values = [
-  { icon: Bird, title: "Paix", desc: "La paix est au cœur de notre engagement.", img: "/images/peace-conference.jpg" },
-  { icon: Handshake, title: "Solidarité", desc: "Nous croyons en la force de la solidarité entre les peuples.", img: "/images/join-bg.jpg" },
-  { icon: SearchCheck, title: "Transparence", desc: "La transparence guide toutes nos actions et notre gouvernance.", img: "/images/governance-workshop.jpg" },
-  { icon: Scale, title: "Justice", desc: "Nous œuvrons pour une société juste et équitable.", img: "/images/community-meeting.jpg" },
-  { icon: Globe, title: "Inclusion", desc: "Chacun a sa place dans la construction d'un avenir meilleur.", img: "/images/education-girls.jpg" },
-  { icon: Heart, title: "Engagement", desc: "Nous nous engageons avec détermination pour nos causes.", img: "/images/youth-training.jpg" },
-  { icon: Target, title: "Responsabilité", desc: "Nous assumons la responsabilité de nos actions et de leur impact.", img: "/images/governance-workshop.jpg" },
-  { icon: Sprout, title: "Durabilité", desc: "Nos actions visent un impact durable pour les générations futures.", img: "/images/environment-tree.jpg" },
+  { icon: Bird, title: "Paix", desc: "La paix est au cœur de notre engagement.", img: "/images/paix-poignee.jpg" },
+  { icon: Handshake, title: "Solidarité", desc: "Nous croyons en la force de la solidarité entre les peuples.", img: "/images/benevoles-groupe.jpg" },
+  { icon: SearchCheck, title: "Transparence", desc: "La transparence guide toutes nos actions et notre gouvernance.", img: "/images/gouvernance-reunion.jpg" },
+  { icon: Scale, title: "Justice", desc: "Nous œuvrons pour une société juste et équitable.", img: "/images/justice-balance.jpg" },
+  { icon: Globe, title: "Inclusion", desc: "Chacun a sa place dans la construction d'un avenir meilleur.", img: "/images/education-classe.jpg" },
+  { icon: Heart, title: "Engagement", desc: "Nous nous engageons avec détermination pour nos causes.", img: "/images/equipe-numerique.jpg" },
+  { icon: Target, title: "Responsabilité", desc: "Nous assumons la responsabilité de nos actions et de leur impact.", img: "/images/equipe-atelier.jpg" },
+  { icon: Sprout, title: "Durabilité", desc: "Nos actions visent un impact durable pour les générations futures.", img: "/images/environnement-foret.jpg" },
 ];
 
 const timeline = [
@@ -74,10 +74,10 @@ export default function AboutPage() {
             <Reveal delay={120}>
               <div className="relative">
                 <div className="relative h-80 md:h-[480px] rounded-2xl overflow-hidden shadow-2xl">
-                  <Image src="/images/peace-conference.jpg" alt="CIPBG en action" fill className="object-cover" />
+                  <Image src="/images/citoyens-mobilises.jpg" alt="CIPBG en action" fill className="object-cover" />
                 </div>
                 <div className="absolute -bottom-6 -right-4 w-40 h-32 rounded-xl overflow-hidden shadow-xl border-4 border-white hidden md:block animate-float">
-                  <Image src="/images/community-meeting.jpg" alt="Réunion communautaire" fill className="object-cover" />
+                  <Image src="/images/conference-publique.jpg" alt="Réunion communautaire" fill className="object-cover" />
                 </div>
               </div>
             </Reveal>
@@ -90,13 +90,13 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-4 gap-3 h-48 md:h-64">
             <div className="relative rounded-xl overflow-hidden col-span-2">
-              <Image src="/images/education-girls.jpg" alt="Éducation des filles" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="/images/education-secondaire.jpg" alt="Éducation des filles" fill className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="relative rounded-xl overflow-hidden">
-              <Image src="/images/environment-tree.jpg" alt="Environnement" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="/images/reboisement-enfant.jpg" alt="Environnement" fill className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="relative rounded-xl overflow-hidden">
-              <Image src="/images/youth-training.jpg" alt="Formation jeunes" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src="/images/etudiants-groupe.jpg" alt="Formation jeunes" fill className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl overflow-hidden shadow-md group">
               <div className="relative h-60 overflow-hidden">
-                <Image src="/images/community-meeting.jpg" alt="Vision" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Image src="/images/assemblee-public.jpg" alt="Vision" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent" />
                 <div className="absolute bottom-6 left-8 right-8">
                   <div className="flex items-center gap-3">
@@ -130,7 +130,7 @@ export default function AboutPage() {
             </div>
             <div className="bg-white rounded-2xl overflow-hidden shadow-md group">
               <div className="relative h-60 overflow-hidden">
-                <Image src="/images/governance-workshop.jpg" alt="Mission" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Image src="/images/presentation-reunion.jpg" alt="Mission" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/40 to-transparent" />
                 <div className="absolute bottom-6 left-8 right-8">
                   <div className="flex items-center gap-3">
@@ -209,7 +209,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-72 md:h-96 rounded-2xl overflow-hidden shadow-xl">
-              <Image src="/images/join-bg.jpg" alt="Équipe CIPBG" fill className="object-cover" />
+              <Image src="/images/partenaires-office.jpg" alt="Équipe CIPBG" fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/40 to-transparent" />
             </div>
             <div>

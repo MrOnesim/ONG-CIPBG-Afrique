@@ -13,15 +13,15 @@ export const metadata: Metadata = {
 };
 
 const defaultGallery = [
-  { src: "/images/peace-conference.jpg", title: "Conférence sur la paix", album: "Événements CIPBG" },
-  { src: "/images/education-girls.jpg", title: "Programme éducation des filles", album: "Éducation" },
-  { src: "/images/community-meeting.jpg", title: "Réunion communautaire", album: "Démocratie" },
-  { src: "/images/environment-tree.jpg", title: "Plantation d'arbres communautaire", album: "Environnement" },
-  { src: "/images/youth-training.jpg", title: "Formation professionnelle jeunes", album: "Jeunesse" },
-  { src: "/images/governance-workshop.jpg", title: "Atelier bonne gouvernance", album: "Gouvernance" },
-  { src: "/images/about-bg.jpg", title: "Dialogue intercommunautaire", album: "Événements CIPBG" },
-  { src: "/images/join-bg.jpg", title: "Activité bénévoles", album: "Bénévolat" },
-  { src: "/images/hero-bg.jpg", title: "Paysage africain", album: "Divers" },
+  { src: "/images/equipe-numerique.jpg", title: "Conférence sur la paix", album: "Événements CIPBG" },
+  { src: "/images/education-diplome.jpg", title: "Programme éducation des filles", album: "Éducation" },
+  { src: "/images/gouvernance-reunion.jpg", title: "Réunion communautaire", album: "Démocratie" },
+  { src: "/images/reboisement-enfant.jpg", title: "Plantation d'arbres communautaire", album: "Environnement" },
+  { src: "/images/etudiants-groupe.jpg", title: "Formation professionnelle jeunes", album: "Jeunesse" },
+  { src: "/images/atelier-whiteboard.jpg", title: "Atelier bonne gouvernance", album: "Gouvernance" },
+  { src: "/images/presentation-reunion.jpg", title: "Dialogue intercommunautaire", album: "Événements CIPBG" },
+  { src: "/images/femmes-bureau.jpg", title: "Activité bénévoles", album: "Bénévolat" },
+  { src: "/images/aide-communautaire.jpg", title: "Paysage africain", album: "Divers" },
 ];
 
 export const dynamic = "force-dynamic";
@@ -40,7 +40,7 @@ export default async function GaleriePage() {
         kicker="Nos moments"
         title="Galerie"
         subtitle="Photos et vidéos de nos activités, événements et projets sur le terrain."
-        image="/images/education-girls.jpg"
+        image="/images/partenaires-office.jpg"
       />
 
       <section className="py-16 bg-white">

@@ -11,14 +11,14 @@ export const metadata: Metadata = {
 
 const objectives = [
   { num: 1, title: "Paix et bonne gouvernance", desc: "Promouvoir la paix et la bonne gouvernance au Bénin et dans la sous-région à travers des initiatives de sensibilisation.", icon: Bird, img: "/images/peace-conference.jpg" },
-  { num: 2, title: "Corruption et transparence", desc: "Organiser des initiatives, conférences ou colloques portant sur la lutte contre la corruption et la promotion de la transparence.", icon: SearchCheck, img: "/images/governance-workshop.jpg" },
+  { num: 2, title: "Corruption et transparence", desc: "Organiser des initiatives, conférences ou colloques portant sur la lutte contre la corruption et la promotion de la transparence.", icon: SearchCheck, img: "/images/justice-balance.jpg" },
   { num: 3, title: "État de droit et participation", desc: "Organiser des ateliers de formation sur l'État de droit, la participation citoyenne et la démocratie.", icon: Landmark, img: "/images/community-meeting.jpg" },
-  { num: 4, title: "Non-violence et responsabilité", desc: "Sensibiliser et impliquer les citoyens dans la culture de la non-violence, de la responsabilité et de la paix.", icon: Hand, img: "/images/peace-conference.jpg" },
-  { num: 5, title: "Extrémisme violent et emploi des jeunes", desc: "Sensibiliser les populations sur les risques liés à l'extrémisme violent et promouvoir les initiatives en faveur de l'emploi des jeunes.", icon: ShieldCheck, img: "/images/youth-training.jpg" },
-  { num: 6, title: "Prévention des violences électorales", desc: "Organiser des activités avant, pendant et après les élections afin de promouvoir une culture de non-violence.", icon: Vote, img: "/images/community-meeting.jpg" },
-  { num: 7, title: "Participation citoyenne", desc: "Encourager la participation citoyenne et le développement de la démocratie.", icon: Users, img: "/images/governance-workshop.jpg" },
-  { num: 8, title: "Éducation des filles", desc: "Promouvoir l'éducation des filles en milieu urbain et rural.", icon: GraduationCap, img: "/images/education-girls.jpg" },
-  { num: 9, title: "Protection de l'environnement", desc: "Sensibiliser les populations sur l'importance de la protection de l'environnement.", icon: Sprout, img: "/images/environment-tree.jpg" },
+  { num: 4, title: "Non-violence et responsabilité", desc: "Sensibiliser et impliquer les citoyens dans la culture de la non-violence, de la responsabilité et de la paix.", icon: Hand, img: "/images/paix-mains.jpg" },
+  { num: 5, title: "Extrémisme violent et emploi des jeunes", desc: "Sensibiliser les populations sur les risques liés à l'extrémisme violent et promouvoir les initiatives en faveur de l'emploi des jeunes.", icon: ShieldCheck, img: "/images/equipe-numerique.jpg" },
+  { num: 6, title: "Prévention des violences électorales", desc: "Organiser des activités avant, pendant et après les élections afin de promouvoir une culture de non-violence.", icon: Vote, img: "/images/elections-urne.jpg" },
+  { num: 7, title: "Participation citoyenne", desc: "Encourager la participation citoyenne et le développement de la démocratie.", icon: Users, img: "/images/gouvernance-reunion.jpg" },
+  { num: 8, title: "Éducation des filles", desc: "Promouvoir l'éducation des filles en milieu urbain et rural.", icon: GraduationCap, img: "/images/education-classe.jpg" },
+  { num: 9, title: "Protection de l'environnement", desc: "Sensibiliser les populations sur l'importance de la protection de l'environnement.", icon: Sprout, img: "/images/environnement-foret.jpg" },
 ];
 
 export default function ObjectivesPage() {
@@ -28,7 +28,7 @@ export default function ObjectivesPage() {
         kicker="Notre engagement"
         title="Nos Objectifs"
         subtitle="Neuf objectifs majeurs guident les actions de CIPBG Afrique pour contribuer à un avenir meilleur."
-        image="/images/governance-workshop.jpg"
+        image="/images/equipe-atelier.jpg"
       />
 
       <section className="py-20 bg-white">

@@ -17,7 +17,7 @@ export default function ContactPage() {
         kicker="Contactez-nous"
         title="Contact"
         subtitle="Nous sommes à votre écoute. N'hésitez pas à nous écrire, appeler ou passer nous voir à Abomey-Calavi."
-        image="/images/community-meeting.jpg"
+        image="/images/assemblee-public.jpg"
       />
 
       <section className="py-16 bg-white">
@@ -87,7 +87,7 @@ export default function ContactPage() {
 
               {/* Image instead of map */}
               <div className="mt-8 relative h-56 rounded-2xl overflow-hidden shadow-xl">
-                <Image src="/images/about-bg.jpg" alt="Abomey-Calavi, Bénin" fill className="object-cover" />
+                <Image src="/images/presentation-reunion.jpg" alt="Abomey-Calavi, Bénin" fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/60 to-transparent" />
                 <div className="absolute bottom-4 left-6 text-white">
                   <p className="font-bold"><MapPin className="w-4 h-4 inline-block mr-1 -mt-0.5 text-accent" />Abomey-Calavi</p>

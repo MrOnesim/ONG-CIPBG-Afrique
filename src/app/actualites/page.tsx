@@ -26,7 +26,7 @@ export default async function ActualitesPage() {
         kicker="Restez informé"
         title="Actualités"
         subtitle="Articles, communiqués et événements de CIPBG Afrique."
-        image="/images/governance-workshop.jpg"
+        image="/images/education-diplome.jpg"
       />
 
       <section className="py-16 bg-white">
@@ -35,13 +35,13 @@ export default async function ActualitesPage() {
             <div className="text-center py-16">
               <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-10">
                 <div className="relative h-36 rounded-xl overflow-hidden shadow-md">
-                  <Image src="/images/peace-conference.jpg" alt="" fill className="object-cover opacity-50" />
+                  <Image src="/images/equipe-numerique.jpg" alt="" fill className="object-cover opacity-50" />
                 </div>
                 <div className="relative h-36 rounded-xl overflow-hidden shadow-md">
-                  <Image src="/images/education-girls.jpg" alt="" fill className="object-cover opacity-50" />
+                  <Image src="/images/aide-communautaire.jpg" alt="" fill className="object-cover opacity-50" />
                 </div>
                 <div className="relative h-36 rounded-xl overflow-hidden shadow-md">
-                  <Image src="/images/environment-tree.jpg" alt="" fill className="object-cover opacity-50" />
+                  <Image src="/images/reboisement-enfant.jpg" alt="" fill className="object-cover opacity-50" />
                 </div>
               </div>
               <Newspaper className="w-14 h-14 mx-auto text-primary/40 mb-4" />
@@ -60,7 +60,7 @@ export default async function ActualitesPage() {
                     {a.imageUrl ? (
                       <Image src={a.imageUrl} alt={a.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                     ) : (
-                      <Image src="/images/governance-workshop.jpg" alt={a.title} fill className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" />
+                      <Image src="/images/conference-publique.jpg" alt={a.title} fill className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" />
                     )}
                     <div className="absolute top-4 left-4">
                       <span className="bg-accent text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-md uppercase">{a.category}</span>
