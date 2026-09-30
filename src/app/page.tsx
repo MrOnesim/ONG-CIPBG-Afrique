@@ -263,7 +263,6 @@ export default async function HomePage() {
                   <div className="relative h-32 overflow-hidden">
                     <Image src={d.img} alt={d.title} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                    <d.icon className="absolute bottom-3 left-3 w-6 h-6 text-white drop-shadow-lg" />
                   </div>
                   <div className="p-4 text-center">
                     <h3 className="font-bold text-primary mb-1 text-sm leading-tight">{d.title}</h3>
