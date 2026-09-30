@@ -7,32 +7,51 @@ import { createHmac, timingSafeEqual } from "node:crypto";
 
 const SESSION_COOKIE = "cipbg_admin_session";
 const SESSION_MAX_AGE = 60 * 60 * 24 * 7; // 7 days
-const SECRET = process.env.ADMIN_SECRET || "cipbg-dev-secret-change-me";
 
-function sign(value: string): string {
-  return createHmac("sha256", SECRET).update(value).digest("hex");
+function requireSecret(): string {
+  const secret = process.env.ADMIN_SECRET;
+  if (!secret) {
+    throw new Error(
+      "ADMIN_SECRET is not set. Refusing to sign sessions with a fallback key.",
+    );
+  }
+  return secret;
 }
 
+function sign(value: string): string {
+  return createHmac("sha256", requireSecret()).update(value).digest("hex");
+}
+
+type SessionPayload = { id: number; email: string; exp: number };
+
 export function createSessionToken(id: number, email: string): string {
-  const payload = `${id}:${email}:${Date.now() + SESSION_MAX_AGE * 1000}`;
+  const payload = JSON.stringify({
+    id,
+    email,
+    exp: Date.now() + SESSION_MAX_AGE * 1000,
+  } satisfies SessionPayload);
   return `${Buffer.from(payload).toString("base64url")}.${sign(payload)}`;
 }
 
-function verifyToken(token: string): { id: number; email: string } | null {
+function verifyToken(token: string): SessionPayload | null {
   try {
     const [encoded, sig] = token.split(".");
     if (!encoded || !sig) return null;
     const payload = Buffer.from(encoded, "base64url").toString();
-    const [idStr, email, expiresStr] = payload.split(":");
-    const id = parseInt(idStr, 10);
-    const expires = parseInt(expiresStr, 10);
-    if (!id || !email || !expires) return null;
-    if (Date.now() > expires) return null;
+    const parsed = JSON.parse(payload) as Partial<SessionPayload>;
+    if (
+      typeof parsed.id !== "number" ||
+      typeof parsed.email !== "string" ||
+      typeof parsed.exp !== "number"
+    ) {
+      return null;
+    }
+    if (Date.now() > parsed.exp) return null;
     const expected = sign(payload);
     const a = Buffer.from(sig, "hex");
     const b = Buffer.from(expected, "hex");
     if (a.length !== b.length || !timingSafeEqual(a, b)) return null;
-    return { id, email };
+    return { id: parsed.id, email: parsed.email, exp: parsed.exp };
   } catch {
     return null;
   }
@@ -60,4 +79,4 @@ export async function verifyPassword(password: string, hash: string): Promise<bo
   return bcrypt.compare(password, hash);
 }
 
-export { SESSION_COOKIE };
+export { SESSION_COOKIE, SESSION_MAX_AGE };
