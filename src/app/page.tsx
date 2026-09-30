@@ -88,42 +88,34 @@ export default async function HomePage() {
   return (
     <>
       {/* ══════════ HERO ══════════ */}
-      <section className="relative min-h-[650px] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[520px] sm:min-h-[580px] lg:min-h-[640px] flex items-center justify-center overflow-hidden py-20 md:py-24">
         <Image
           src="/images/hero-bg.jpg"
-          alt="Afrique pacifique"
+          alt=""
+          aria-hidden
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/90 via-primary/75 to-primary-dark/70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-primary-dark/80 via-primary-dark/70 to-primary-dark/85" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <div className="mb-6 hero-logo">
-            <div className="mx-auto w-fit rounded-2xl bg-white/95 backdrop-blur p-3 shadow-2xl ring-1 ring-white/40">
-              <Image src="/images/logo.png" alt="Logo CIPBG" width={150} height={100} priority className="h-24 w-auto" />
-            </div>
-          </div>
-          <span className="hero-logo inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full glass text-sm font-semibold tracking-wide">
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse-soft" />
-            ONG enregistrée au Bénin · Depuis 2023
-          </span>
-          <h1 className="hero-title text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
+          <h1 className="hero-title text-4xl md:text-6xl font-bold tracking-tight text-balance mb-5 leading-tight">
             Promouvoir la paix et la <span className="text-gradient">bonne gouvernance</span> en Afrique
           </h1>
-          <p className="hero-sub text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="hero-sub text-lg md:text-xl text-white/85 mb-8 max-w-xl mx-auto">
             Ensemble, construisons des sociétés plus pacifiques, responsables, transparentes et inclusives.
           </p>
           <div className="hero-cta flex flex-wrap justify-center gap-4">
             <Link
-              href="/domaines"
-              className="bg-accent hover:bg-accent-light text-white px-8 py-3.5 rounded-full font-bold text-lg transition-colors shadow-xl shadow-accent/30 btn-lift"
+              href="/projets"
+              className="bg-accent hover:bg-accent-light text-white px-7 py-3.5 rounded-full font-semibold text-base md:text-lg transition-colors shadow-xl shadow-accent/30 btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark"
             >
               Découvrir nos actions
             </Link>
             <Link
               href="/contact"
-              className="bg-white/15 hover:bg-white/25 text-white px-8 py-3.5 rounded-full font-bold text-lg transition-colors border border-white/40 backdrop-blur-md btn-lift"
+              className="bg-white/15 hover:bg-white/25 text-white px-7 py-3.5 rounded-full font-semibold text-base md:text-lg transition-colors border border-white/25 backdrop-blur-md btn-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark"
             >
               Nous contacter
             </Link>

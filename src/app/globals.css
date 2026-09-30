@@ -75,11 +75,6 @@ h1, h2, h3, h4 {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes fade-in {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50%      { transform: translateY(-14px); }
@@ -115,14 +110,6 @@ h1, h2, h3, h4 {
   animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
 }
 
-.hero-logo {
-  animation: fade-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-.hero-scroll {
-  animation: fade-in 1s ease 1s both;
-}
-
 /* ── Scroll reveal ────────────────────────────────── */
 
 .reveal {
@@ -139,7 +126,7 @@ h1, h2, h3, h4 {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .hero-title, .hero-sub, .hero-cta, .hero-logo, .hero-scroll, .reveal {
+  .hero-title, .hero-sub, .hero-cta, .reveal {
     animation: none;
     opacity: 1;
     transform: none;
